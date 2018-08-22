@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
-    <title>Quality of This Data</title>
+    <title>Data quality</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -45,29 +45,39 @@
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
-	<h1>Quality: About This Data Set</h1>
-        <p>Write a brief summary about the quality of the data set here</a></p>
-      </div>
-
-    
+		<h1>Quality: About This Data Set</h1></div>
+    	<div class="page-header"><p>I implemented a tracking experiment of my daily routine from April 2 to April 12 of 2018 using my mobile phone. I ran the experiment using the AWARE application and connecting it to my cloud database. 
+        I tracked my location, battery charge, and screen from April 2nd to April 12th and tried to find if there was a pattern in the way I charge and use my cellphone during a regular week at school. 
+        I used three datasets -- location, battery charge, and screen. Those datasets have a good quality and are reliable because they were generated using plugins and censors installed in the mobile phone I carried in my bag or pockets most of time.
+        So, information obtained from my mobile phone might be a good approximation to my routine.
+        </p>
+        </div>
       <div class="page-header">
-	<h2>Is the data complete?</h2>
-	<p>If not, what is missing and what concerns does it raise?
-	What is your evidence for this?</p>
-      </div>
+		<h2>Is the data complete?</h2>
+		<p>No, the data is not complete because I faced different technical issues while trying to get the information. 
+		First, there was an issue connecting the cellphone to the cloud database. As a consequence, I lost two weeks of data. After that, there was an error in the connection between the AWARE mobile application
+		and the console, so, the csv databases generated didn't contain any data. Also, for some time the aware application only allowed to get information about the battery when the cellphone was charging, and the data in general
+		when it was connected to a wi-fi signal. Finally I ran a new experiment that was succesful, however, the frequency was lower than expected because the battery was draining very fast. Reason why I didn't get information for every hour.
+		This is evident for example in the table that shows the screen usage because there are several cells that are empty.
+		</p>
+		</div>
       
       <div class="page-header">
-	<h2>Is the data coherent?</h2>
-	<p>Does it make sense relative to itself? Does it match your
-	expectations? Are the distributions sensible? What is your
-	evidence for this?</p>
-      </div>
+		<h2>Is the data coherent?</h2>
+		<p>Databases seemed coherent when I compared them with my school schedule. However, I was expecting data for more variables than what I got. 
+		I got a lot of zero columns mainly because Apple does not support getting data in those cases. Regarding the distribution
+		</p>
+        </div>
 
       <div class="page-header">
-	<h2>Is the data correct?</h2>
-	<p>What aspects of this data can you verify? How did you do so? What did
-	you find?</p>
-      </div>
+		<h2>Is the data correct?</h2>
+		<p>The data is not completely accurate for two main reasons. First, although I have the cellphone most of the time with me, I left it a couple of times
+		in my bag so the location data does not show all the places I go. Second, I bought a extended battery for my cellphone, so, I can charge it
+		more frequently, it means that my patterns of charge are affected by this new changer. Additionally, given that
+		for getting the data I had to install the application Aware that was running all draining my cellphone battery. I realized that because my cellphone was warm all the time, and I
+		had to charge it more frequently. So, the data of battery charging is affected by the experiment itself.
+		</p>
+     	</div>
 
     </div> <!-- /container -->
 

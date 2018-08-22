@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -46,19 +45,24 @@
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
-	<h1>Accountability: About This Data Set</h1>
-        <p>Write a brief summary about the data set here</a></p>
-      </div>
-
-    
+	<h1>Accountability: About This Data Set</h1></div>
+	
+	   <div class="page-header"><p>The datasets are the result of running an experiment that uses different activity tracking plugins and sensors using my mobile phone. 
+        I got information of mobile screen, battery, and gps. I had to use less information than I was expecting because Apple does not allow to get all the data the application offers.
+        For example, activity recognition. Given the data I got was adquired with a particular periodicity, it presented some gaps. I decided to calculate the average data by hour to eliminate outliers and to reduce variability and noise in the data.
+        Then I matched battery and location data using the concatenation of day and hour. After this match I had to eliminate the data that didn't match.
+        </p></div>
+          
       <div class="page-header">
 	<h2>Where did this data come from?</h2>
-	<p>fill in</p>
+	<p>The data was retrieved from the AWARE app using SQL. I used battery charge, location and screen data from my cellphone. The problem of this data is that my location is not exacltly accurate because I carried my cellphone most of the time with me,
+	but sometimes I forgot my mobile at home while being in a different place. So, I got the data based on my cellphone location as a proxy of my routine.
+	</p>
       </div>
       
       <div class="page-header">
 	<h2>Who has access to it?</h2>
-	<p>fill in</p>
+	<p>Only I can get the raw data, however, the data that I uploaded to Tableau is public.</p>
       </div>
 
 
@@ -73,3 +77,4 @@
     <script src="js/docs.min.js"></script>
   </body>
 </html>
+
